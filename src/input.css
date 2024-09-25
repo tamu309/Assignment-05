@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.lexend-Normal> {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <800>;
+    font-style: normal;
+  }
+.Text-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.Text-2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.Text-3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.Text-4{
+    font-size: 16px;
+    font-weight: 300;
+}
+.Text-5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.Button-1{
+    padding: 16px 200px 16px 200px;
+    border-radius: 8px;
+    background-color: #b4f461;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
