@@ -21,7 +21,7 @@
     <div class="navbar flex justify-between px-28 py-6">
 
       <div >
-        <button class=" Text-2 btn btn-success " style="background-color: #B4F461; border: none;">Blog</button>
+        <button id="blogBtn" class=" Text-2 btn btn-success " style="background-color: #B4F461; border: none;">Blog</button>
       </div>
 
       <div >
@@ -33,30 +33,42 @@
      
       <div >
 
-        <button class="btn btn-outline " style="border: none;">
-          <div class="flex justify-center items-center gap-2 ">
-            <img src="https://i.ibb.co.com/cvt6y2L/coin.png" alt="">
-          <h3 class="Text-2 text-black">5500 BDT</h3>
-          </div>
-        </button>
+        <div class="primary_money justify-center items-center flex gap-1">
+          <img src="https://i.ibb.co.com/cvt6y2L/coin.png" />
+          <span id="primary_money" class="font-bold text-sm md:text-2xl"
+            >5500</span
+          >
+          <span class="font-bold text-sm md:text-2xl">BDT</span>
+        </div>
 
         </div>
       
       </div>
     </div>
-  </header>
 
-  <main>
-    <!-- Button Section start  -->
+     <!-- Button Section start  -->
      <section class="flex justify-center gap-5 pt-28 pb-20 Text-2">
-      <button class="Text-2 btn btn-success" style="background-color: #B4F461; border: none;">Donation</button>
-      <button class="btn text-black btn-outline Text-2">History</button>
+      <button
+      id="donationId"
+      class="btn btn-outline bg-lime-500 hover:bg-lime-500 w-36 text-black font-bold"
+    >
+      Donation
+    </button>
+    <button
+      id="historyId"
+      class="btn btn-outline hover:bg-lime-500 w-36 text-black font-bold"
+    >
+      History
+    </button>
      </section>
     <!-- Button Section End  -->
 
+  </header>
 
+  <main id="mainId">
+   
      <!-- About Section 1 Start  -->
-     <section class="
+     <section id="donationSection" class="
      border-solid  pb-10 mx-28 mb-10" style="border: 1px solid #c0bfbf;border-radius:10px;">
       <div class="hero pt-10 mx-10" >
         <div class="hero-content flex-col lg:flex-row">
@@ -66,17 +78,41 @@
           <div class="px-20">
             <button class="btn btn-outline " style="border: none;">
               <div class="flex justify-center items-center gap-2 ">
-                <img src="https://i.ibb.co.com/cvt6y2L/coin.png" alt="">
-              <h3 class="Text-5 text-black">0 BDT</h3>
+                <span><img src="https://i.ibb.co.com/cvt6y2L/coin.png" alt="" /></span>
+                <span id="noakhali-total-donate">00</span> 
+                <span>BDT</span>
               </div>
             </button>
-            <h2 class="text-black Text-3 font-bold pt-6">Donate for Flood at Noakhali, Bangladesh</h2>
+            <h2 id="noakhali" class="text-black Text-3 font-bold pt-6">Donate for Flood at Noakhali, Bangladesh</h2>
             <p class="py-6 text-justify leading-6">
               The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
             </p>
             <div class="grid gap-5">
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered bg-white pe-56" />
-            <button class="Text-2 Button-1 text-black font-bold " >Donate Now</button>
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered bg-white pe-56" id="noakhali-donate-input"
+              autocomplete="off"/>
+            <button  id="noakhali-donate-btn" class="Text-2 Button-1 text-black font-bold " 
+            onclick="">Donate Now</button>
+
+            <!-- Modal html start -->
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <h3 class="text-4xl font-bold text-center">Thank You!</h3>
+                <div class="flex justify-center mt-3">
+                  <img src="./assets/coin.png" alt="" />
+                </div>
+                <p id="modalInput" class="py-4 text-center"></p>
+
+                <div class="modal-action justify-center">
+                  <form method="dialog">
+                    <button class="btn text-center items-center">
+                      Close Information
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <!-- Modal html end -->
+
             </div>
           </div>
         </div>
@@ -86,7 +122,7 @@
 
 
     <!-- About Section 2 Start  -->
-     <section class="
+     <section id="donationSection" class="
      border-solid pb-10 mx-28" style="border: 1px solid #c0bfbf;border-radius:10px;">
       <div class="hero pt-10 mx-10" >
         <div class="hero-content flex-col lg:flex-row">
@@ -116,7 +152,7 @@
 
 
     <!-- About Section 3 Start  -->
-    <section class="
+    <section id="donationSection" class="
     border-solid mt-10 pb-10 mx-28" style="border: 1px solid #c0bfbf;border-radius:10px;">
      <div class="hero pt-10 mx-10" >
        <div class="hero-content flex-col lg:flex-row">
@@ -145,6 +181,18 @@
    <!-- About Section 3 End -->  
 
 
+   <!-- history-section Start  -->
+
+  <section id="historySection" class="flex hidden flex-col ">
+            
+    <div id="show-history" class="history-section  flex flex-col lg:text-start gap-12   p-3 h-auto w-11/12 lg:w-10/12 m-auto ">
+    </div>
+     
+  </section>
+
+   <!-- history-section End  -->
+
+
   </main>
 
   <footer>
@@ -156,5 +204,6 @@
 
 
   <script src="./index.js"></script>
+  <script src="./Blog.js"></script>
 </body>
 </html>

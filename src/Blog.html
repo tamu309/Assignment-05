@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="lexend-Normal" style="background-color: #FFFFFF;">
+
+    <header style="background-color: #F9F7F3;" >
+        <div class="navbar flex justify-between px-28 py-6">
+    
+          <div >
+            <button id="homeBtn" class=" Text-2 btn btn-success " style="background-color: #B4F461; border: none;">Home</button>
+          </div>
+    
+          <div >
+           <div class="flex justify-center items-center gap-5 ">
+            <img src="https://i.ibb.co.com/qWWFrxH/logo.png" alt="">
+            <h3 class="Text-2 text-black">Donate Bangladesh</h3>
+           </div>
+          </div>
+         
+          <div >
+    
+            <button class="btn btn-outline " style="border: none;">
+              <div class="flex justify-center items-center gap-2 ">
+                <img src="https://i.ibb.co.com/cvt6y2L/coin.png" alt="">
+              <h3 class="Text-2 text-black">5500 BDT</h3>
+              </div>
+            </button>
+    
+            </div>
+          
+          </div>
+        </div>
+      </header>
+
+      <main>
+
+    <!-- FAQ Section start  -->
+
+  <section class=" py-10 mx-28 flex flex-col gap-5">
+ 
+    <h1 class="text-black font-bold py-2 text-3xl">Important FAQ :</h1>
+
+    <div class="collapse collapse-arrow text-black border-2 bg-slate-100">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is a closure in JavaScript?</div>
+        <div class="collapse-content">
+          <p>A closure is a feature in JavaScript where an inner function has access to variables from its outer (enclosing) function, even after the outer function has returned. This allows the inner function to remember and continue to access the scope in which it was created.</p>
+        </div>
+    </div>
+
+    <div class="collapse collapse-arrow text-black border-2 bg-slate-100">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is hoisting in JavaScript?</div>
+        <div class="collapse-content">
+          <p>Hoisting is JavaScript's default behavior of moving variable and function declarations to the top of their containing scope before code execution. This means that variables and functions can be used before they are declared, although the value of variables declared with var will be undefined until assigned.</p>
+        </div>
+    </div>
+
+      <div class="collapse collapse-arrow border-2 bg-slate-100 text-black">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How does event work in JavaScript?</div>
+        <div class="collapse-content">
+          <p>Event refers to the way events flow through the DOM in three phases: the capturing phase (from the root to the target element), the target phase (when the event reaches the target element), and the bubbling phase (from the target element back up to the root). This allows event listeners to be set either during capturing or bubbling.</p>
+        </div>
+      </div>
+
+  </section>
+
+    <!-- FAQ ectiSon End  -->
+
+      </main>
+
+    <script>
+        document.getElementById("homeBtn").addEventListener("click", function () {
+      window.location.href = "./index.html";
+    });
+    </script>
+
+
+    
+
+    <script src="./index.js"></script>
+    <script src="./Blog.js"></script>
+</body>
+</html>
