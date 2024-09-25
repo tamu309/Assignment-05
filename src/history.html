@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+
+</head>
+<link rel="stylesheet" href="./input.css">
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="lexend-Normal" style="background-color: #FFFFFF;">
+
+    <header style="background-color: #F9F7F3;" >
+        <div class="navbar flex justify-between px-28 py-6">
+    
+          <div >
+            <button id="homeBtn" class=" Text-2 btn btn-success " style="background-color: #B4F461; border: none;">Home</button>
+          </div>
+    
+          <div >
+           <div class="flex justify-center items-center gap-5 ">
+            <img src="https://i.ibb.co.com/qWWFrxH/logo.png" alt="">
+            <h3 class="Text-2 text-black">Donate Bangladesh</h3>
+           </div>
+          </div>
+         
+          <div >
+    
+            <button class="btn btn-outline " style="border: none;">
+              <div class="flex justify-center items-center gap-2 ">
+                <img src="https://i.ibb.co.com/cvt6y2L/coin.png" alt="">
+              <h3 class="Text-2 text-black">5500 BDT</h3>
+              </div>
+            </button>
+    
+            </div>
+          
+          </div>
+        </div>
+
+
+        <!-- Button Section start  -->
+     <section class="flex justify-center gap-5 pt-28 pb-20 Text-2">
+        <a href="./index.html">
+            <button
+        id="donationId"
+        class="btn btn-outline hover:bg-lime-500 w-36 text-black font-bold"
+      >
+        Donation
+      </button>
+        </a>
+      <button
+        id="historyId"
+        class="btn btn-outline bg-lime-500  hover:bg-lime-500 w-36 text-black font-bold"
+      >
+        History
+      </button>
+       </section>
+      <!-- Button Section End  -->
+
+      </header>
+
+      <main>
+
+    <!-- history-section Start  -->
+
+  <section id="historySection" class="flex hidden flex-col ">
+            
+    <div id="show-history" class="history-section  flex flex-col lg:text-start gap-12   p-3 h-auto w-11/12 lg:w-10/12 m-auto ">
+    </div>
+     
+  </section>
+
+   <!-- history-section End  -->
+
+      </main>
+
+
+
+    
+
+    <script src="./index.js"></script>
+    <script src="./Blog.js"></script>
+</body>
+</html>
